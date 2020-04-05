@@ -1,0 +1,106 @@
+.header-area{
+    background: #c4c4c4;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+}
+.header-area:after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+ .menu ul{
+     float: right;
+ }
+ .menu ul li{
+    padding: 10px 20px;
+ }
+ .menu ul li a{
+    color: #38434e;;
+    display: block;
+    font-weight: bold;
+    text-decoration: none;
+ }
+ .menu ul li a:hover{
+     color: #da106e
+ }
+.menu-icon{
+    display: none;
+}
+.menu-icon i{
+    font-size: 30px;
+    color:  #454444;
+    cursor: pointer;
+    float: right;
+    padding: 5px;
+}
+
+#window{
+    padding-top: 80px;
+}
+.popup-window{
+    width: 35%;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #000;
+    padding: 15px;
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    display: none;
+}
+.card-footer{
+    background: #d6d4d4d0;
+    text-align: center;
+}
+.window{
+    background: #fff;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 15px;
+    border: 1px solid gray;
+    transition: .52s;
+}
+.window:hover{
+    box-shadow: 0 8px 15px #0009;
+    transform: scale(1.02);   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE CSS */
+@media(max-width: 768px) {
+    .menu-icon{
+        display: block;
+    }
+    .menu{
+        display: none;
+        position: absolute;
+        width: 100%;
+        top: 74px;
+        left: 0;
+        background: #38434e;
+    }
+    .header-area .col-8{
+        position: static;
+    }
+    .menu ul li a{
+        color: #fff;
+    }
+    .menu ul{
+        display: block;
+        float: none;
+    }
+}
